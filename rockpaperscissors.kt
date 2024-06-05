@@ -23,5 +23,10 @@ fun main(){
         playerChoice=="Scissors" && computerChoice=="Paper"-> "Player"
         else->"Computer"
     }
-    println("The winner is "+winner)
+    if(winner=="Tie"){
+        println("Its a Tie!")
+    }
+    else{
+        println("$winner won.")
+    }
 }
