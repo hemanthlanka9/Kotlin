@@ -3,6 +3,10 @@ fun main(){
     var playerChoice=""
     println("Rock, Paper or Scissors? Enter your choice:")
     playerChoice=readln()
+    while(playerChoice!="Rock" && playerChoice!="Paper" && playerChoice!="Scissors"){
+        println("Given wrong input, please enter correct choice!")
+        playerChoice= readln()
+    }
     val randomNumber=(1..3).random()
     if(randomNumber==1){
         computerChoice="Rock"
